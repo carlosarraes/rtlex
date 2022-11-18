@@ -20,6 +20,7 @@ function App() {
         id='control-btn'
         onClick={(e) => setDisabled(e.target.checked)}
       />
+      <label htmlFor='control-btn'>Disable button</label>
     </div>
   );
 }
