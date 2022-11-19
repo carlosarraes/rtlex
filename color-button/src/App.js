@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <button
-        style={{ backgroundColor: `${bgColor ? 'blue' : 'red'}` }}
+        style={{ backgroundColor: `${disabled ? 'gray' : bgColor ? 'blue' : 'red'}` }}
         onClick={() => setBgColor((prevState) => !prevState)}
         disabled={disabled}
       >
