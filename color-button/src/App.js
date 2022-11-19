@@ -12,11 +12,16 @@ function App() {
   return (
     <div>
       <button
-        style={{ backgroundColor: `${disabled ? 'gray' : bgColor ? 'blue' : 'red'}` }}
+        style={{
+          backgroundColor: `${disabled ? 'gray' : bgColor ? 'MidnightBlue' : 'MediumVioletRed'}`,
+        }}
         onClick={() => setBgColor((prevState) => !prevState)}
         disabled={disabled}
       >
-        {bgColor ? 'Change to red' : 'Change to blue'}
+        Change to{' '}
+        {bgColor
+          ? replaceCamelWithSpaces('MediumVioletRed')
+          : replaceCamelWithSpaces('MidnightBlue')}
       </button>
       <input
         type='checkbox'
